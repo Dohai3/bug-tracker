@@ -20,8 +20,6 @@ class BugList extends Component {
                 <BugTable/>
                 <BugAdd/>
             </div>
-
-
         )
     }
 }
