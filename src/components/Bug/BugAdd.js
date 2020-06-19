@@ -1,17 +1,36 @@
-import React, { Component } from "react";
+import React, {useState} from "react";
+import {Button, Modal} from "react-bootstrap";
 
-class BugAdd extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-        };
-    }
+function BugAdd() {
+    const [show, setShow] = useState(false);
 
-    render () {
-        return (
-            <h1>BugAdd</h1>
-        )
-    }
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
+    return (
+        <>
+            <Button variant="success" onClick={handleShow}>
+                New Bug
+            </Button>
+
+            <Modal show={show} onHide={handleClose} animation={false}>
+                <Modal.Header closeButton>
+                    <Modal.Title>New Bug</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    Let's put a form in here
+                </Modal.Body>
+                <Modal.Footer className="modal-footer">
+                    <Button variant="danger" onClick={handleClose}>
+                        Cancel
+                    </Button>
+                    <Button variant="success" onClick={handleClose}>
+                        Create new bug
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+        </>
+    );
 }
 
 export default BugAdd;

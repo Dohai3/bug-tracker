@@ -7,30 +7,30 @@ class ProjectTable extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            projectList : [1, 2, 3]
+            projectList : [{ projectId: 4567, projectStatus: "In Progress", projectOwner: "Larry Kidd", projectTitle: "Testing Project 1-2"},
+                { projectId: 8975, projectStatus: "Waiting Room", projectOwner: "Loud Mouth", projectTitle: "Testing Project 3-4"}]
         };
     }
 
     render () {
         return (
-            <Table responsive>
-                <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Table heading</th>
-                    <th>Table heading</th>
-                    <th>Table heading</th>
-                    <th>Table heading</th>
-                    <th>Table heading</th>
-                    <th>Table heading</th>
-                </tr>
-                </thead>
-                <tbody>
-                    { this.state.projectList.map((key) => {
-                      return ( <ProjectItem projectId={key}/> )
-                    })}
-                </tbody>
-            </Table>
+            <div className="table-container">
+                <Table responsive>
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Title</th>
+                        <th>Status</th>
+                        <th>Owner</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        { this.state.projectList.map((key) => {
+                            return ( <ProjectItem data={key}/> )
+                        })}
+                    </tbody>
+                </Table>
+            </div>
         )
     }
 }

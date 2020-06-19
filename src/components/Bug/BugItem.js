@@ -10,13 +10,12 @@ class BugItem extends Component {
     render () {
         return (
             <tr>
-                <td>Id</td>
-                <td>{ this.props.bugId }</td>
-                <td>{ this.props.bugId }</td>
-                <td>{ this.props.bugId }</td>
-                <td>{ this.props.bugId }</td>
-                <td>{ this.props.bugId }</td>
-                <td>{ this.props.bugId }</td>
+                <td>{ this.props.data.bugId }</td>
+                <td>{ this.props.data.bugStatus }</td>
+                <td>{ this.props.data.bugPriority }</td>
+                <td>{ this.props.data.bugProject }</td>
+                <td>{ this.props.data.bugOwner }</td>
+                <td>{ this.props.data.bugTitle }</td>
             </tr>
         )
     }

@@ -12,10 +12,12 @@ class ProjectList extends Component {
 
     render () {
         return (
-            <div>
-                <h1>ProjectList</h1>
+            <div className="table-pages">
+                <div className="table-header">
+                    <h2>Your projects</h2>
+                    <ProjectAdd/>
+                </div>
                 <ProjectTable/>
-                <ProjectAdd/>
             </div>
 
 

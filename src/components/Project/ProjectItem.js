@@ -10,13 +10,10 @@ class ProjectItem extends Component {
     render () {
         return (
             <tr>
-                <td>Id</td>
-                <td>{ this.props.projectId }</td>
-                <td>{ this.props.projectId }</td>
-                <td>{ this.props.projectId }</td>
-                <td>{ this.props.projectId }</td>
-                <td>{ this.props.projectId }</td>
-                <td>{ this.props.projectId }</td>
+                <td>{ this.props.data.projectId }</td>
+                <td>{ this.props.data.projectTitle }</td>
+                <td>{ this.props.data.projectStatus }</td>
+                <td>{ this.props.data.projectOwner }</td>
             </tr>
         )
     }

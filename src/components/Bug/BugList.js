@@ -14,11 +14,14 @@ class BugList extends Component {
 
     render () {
         return (
-            <div>
-                <h1>BugList</h1>
+            <div className="table-pages">
+                <div className="table-header">
+                    <h1>BugList</h1>
+                    <BugAdd/>
+                </div>
                 <BugFilter/>
                 <BugTable/>
-                <BugAdd/>
+
             </div>
         )
     }
