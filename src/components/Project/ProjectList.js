@@ -12,7 +12,7 @@ class ProjectList extends Component {
 
     render () {
         return (
-            <div className="table-pages">
+            <div className="pages-model">
                 <div className="table-header">
                     <h2>Your projects</h2>
                     <ProjectAdd/>

@@ -15,14 +15,19 @@ class NavigationBar extends Component {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="/projectList">Projects</Nav.Link>
-                        <Nav.Link href="/bugList">Bugs</Nav.Link>
+                        <Nav.Item>
+                            <Nav.Link href="/projectList">Projects</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link href="/bugList">Bugs</Nav.Link>
+                        </Nav.Item>
                     </Nav>
                 </Navbar.Collapse>
                 <Nav className="mr-auto">
                     <Nav.Link href="/profile">Profile</Nav.Link>
                 </Nav>
             </Navbar>
+
         )
     }
 }

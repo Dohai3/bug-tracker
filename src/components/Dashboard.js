@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import PieChart from './Charts/PieChart';
+import BarChart from './Charts/BarChart';
 
 class Dashboard extends Component {
     constructor(props) {
@@ -9,8 +11,20 @@ class Dashboard extends Component {
 
     render () {
         return (
-            <div>
-                <h1>Dashboard</h1>
+            <div className="pages-model">
+                <div id="dashboard-top">
+                    <div className="diag-model">
+                        <PieChart/>
+                    </div>
+                    <div className="diag-model">
+                        <BarChart/>
+                    </div>
+                </div>
+                <div id="dashboard-bot">
+                    <div className="diag-model">
+                        <p>something else</p>
+                    </div>
+                </div>
             </div>
         )
     }
