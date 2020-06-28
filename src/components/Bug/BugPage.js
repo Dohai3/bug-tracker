@@ -4,7 +4,7 @@ import BugFilter from './BugFilter';
 import BugTable from './BugTable';
 import BugAdd from './BugAdd';
 
-class BugList extends Component {
+class BugPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -16,10 +16,12 @@ class BugList extends Component {
         return (
             <div className="pages-model">
                 <div className="table-header">
-                    <h1>BugList</h1>
+                    <div>
+                        <h1>BugList</h1>
+                        <BugFilter/>
+                    </div>
                     <BugAdd/>
                 </div>
-                <BugFilter/>
                 <BugTable/>
 
             </div>
@@ -27,4 +29,4 @@ class BugList extends Component {
     }
 }
 
-export default BugList;
+export default BugPage;

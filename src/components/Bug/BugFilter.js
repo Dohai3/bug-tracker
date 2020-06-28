@@ -7,9 +7,15 @@ class BugFilter extends Component {
         };
     }
 
+    handleSearch(event) {
+        console.log("we sure are handling that search...." + event.valueOf())
+    }
+
     render () {
         return (
-            <h1>BugFilter</h1>
+            <div className="input-field">
+                <input type="text" placeholder="Filter" onKeyUp={this.handleSearch.bind(this)}/>
+            </div>
         )
     }
 }

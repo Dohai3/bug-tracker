@@ -20,7 +20,7 @@ function ProjectAdd() {
                 <Modal.Body>
                     Let's put a form in here
                 </Modal.Body>
-                <Modal.Footer className="modal-footer">
+                <Modal.Footer>
                     <Button variant="danger" onClick={handleClose}>
                         Cancel
                     </Button>

@@ -16,7 +16,7 @@ class ProjectInfo extends Component {
 
     render () {
         return (
-            <div>
+            <div className="pages-model">
                 <h1>ProjectInfo</h1>
                 <h3>{ this.state.projectId }</h3>
             </div>

@@ -24,6 +24,9 @@ class NavigationBar extends Component {
                     </Nav>
                 </Navbar.Collapse>
                 <Nav className="mr-auto">
+                    <Nav.Item>
+                        <input id="search-bar" type="text" placeholder="Search"/>
+                    </Nav.Item>
                     <Nav.Link href="/profile">Profile</Nav.Link>
                 </Nav>
             </Navbar>

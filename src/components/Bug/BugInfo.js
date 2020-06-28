@@ -16,7 +16,7 @@ class BugInfo extends Component {
 
     render () {
         return (
-            <div>
+            <div className="pages-model">
                 <h1>BugInfo</h1>
                 <h3>{ this.state.bugId }</h3>
             </div>

@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import ProjectTable from './ProjectTable';
 import ProjectAdd from './ProjectAdd';
 
-class ProjectList extends Component {
+class ProjectPage extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -25,4 +25,4 @@ class ProjectList extends Component {
     }
 }
 
-export default ProjectList;
+export default ProjectPage;
