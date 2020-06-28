@@ -16,10 +16,10 @@ class NavigationBar extends Component {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
                         <Nav.Item>
-                            <Nav.Link href="/projectList">Projects</Nav.Link>
+                            <Nav.Link href="/projects">Projects</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href="/bugList">Bugs</Nav.Link>
+                            <Nav.Link href="/bugs">Bugs</Nav.Link>
                         </Nav.Item>
                     </Nav>
                 </Navbar.Collapse>

@@ -22,7 +22,7 @@ class Dashboard extends Component {
                 </div>
                 <div id="dashboard-bot">
                     <div className="diag-model">
-                        <p>something else</p>
+                        <p>something else : maybe a table of the new/old/high priority bugs</p>
                     </div>
                 </div>
             </div>

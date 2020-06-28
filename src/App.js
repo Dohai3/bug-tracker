@@ -6,6 +6,8 @@ import ProjectList from './components/Project/ProjectList';
 import Dashboard from './components/Dashboard';
 import NavigationBar from './components/NavigationBar';
 import Profile from './components/Profile';
+import BugInfo from './components/Bug/BugInfo';
+import ProjectInfo from "./components/Project/ProjectInfo";
 
 function App() {
   return (
@@ -13,8 +15,10 @@ function App() {
         <NavigationBar/>
         <Router>
             <Route path="/" exact component={Dashboard}/>
-            <Route path="/projectList" exact component={ProjectList}/>
-            <Route path="/bugList" exact component={BugList}/>
+            <Route path="/projects" exact component={ProjectList}/>
+            <Route path="/projects/:projectId" exact component={ProjectInfo}/>
+            <Route path="/bugs" exact component={BugList}/>
+            <Route path="/bugs/:bugId" exact component={BugInfo}/>
             <Route path="/profile" exact component={Profile}/>
         </Router>
     </div>
